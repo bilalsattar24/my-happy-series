@@ -1,26 +1,358 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff8ec;
+  --foreground: #17324d;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.brand-smiley {
+  position: relative;
+  display: inline-flex;
+  height: 28px;
+  width: 28px;
+  flex: 0 0 auto;
+  border: 3px solid #17324d;
+  border-radius: 999px;
+  background: #ffd85c;
+  box-shadow: 0 3px 0 rgba(240, 92, 92, 0.3);
+}
+
+.brand-smiley::before {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  height: 4px;
+  width: 4px;
+  border-radius: 999px;
+  background: #17324d;
+  box-shadow: 9px 0 0 #17324d;
+  content: "";
+}
+
+.brand-smiley::after {
+  position: absolute;
+  left: 7px;
+  bottom: 6px;
+  height: 8px;
+  width: 12px;
+  border-bottom: 3px solid #17324d;
+  border-radius: 0 0 999px 999px;
+  content: "";
+}
+
+.happy-hero-bg {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(117, 84, 173, 0.16), transparent 28%),
+    radial-gradient(circle at 58% 78%, rgba(97, 169, 71, 0.16), transparent 26%),
+    linear-gradient(135deg, #fff3dc 0%, #ffe2e5 38%, #e8f7ff 72%, #fff8ec 100%);
+}
+
+.happy-purchase-bg {
+  background:
+    radial-gradient(circle at 16% 20%, rgba(240, 92, 92, 0.18), transparent 24%),
+    radial-gradient(circle at 86% 78%, rgba(117, 84, 173, 0.16), transparent 26%),
+    linear-gradient(135deg, #ffd85c 0%, #ffe993 42%, #f8cbd8 100%);
+}
+
+.happy-why-bg {
+  background:
+    radial-gradient(circle at 90% 18%, rgba(15, 117, 188, 0.14), transparent 24%),
+    radial-gradient(circle at 8% 82%, rgba(97, 169, 71, 0.16), transparent 28%),
+    linear-gradient(180deg, #f1fbff 0%, #fff8ec 100%);
+}
+
+.happy-books-bg {
+  background:
+    radial-gradient(circle at 18% 16%, rgba(255, 216, 92, 0.2), transparent 26%),
+    radial-gradient(circle at 84% 18%, rgba(240, 92, 92, 0.18), transparent 25%),
+    radial-gradient(circle at 50% 96%, rgba(97, 169, 71, 0.16), transparent 28%),
+    linear-gradient(135deg, #17324d 0%, #4f3f88 52%, #0f75bc 100%);
+}
+
+.happy-author-bg {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(255, 216, 92, 0.22), transparent 24%),
+    radial-gradient(circle at 78% 18%, rgba(240, 92, 92, 0.14), transparent 24%),
+    radial-gradient(circle at 74% 84%, rgba(97, 169, 71, 0.16), transparent 26%),
+    linear-gradient(135deg, #fff8ec 0%, #ffe9d0 50%, #eaf6df 100%);
+}
+
+.storybook-sprinkles,
+.storybook-purchase-pattern,
+.storybook-side-notes,
+.storybook-author-graphics {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.storybook-heart,
+.storybook-star,
+.storybook-bookmark,
+.storybook-dash,
+.storybook-sunburst,
+.storybook-pencil-line {
+  position: absolute;
+  display: block;
+}
+
+.storybook-heart {
+  height: 26px;
+  width: 26px;
+  rotate: -45deg;
+}
+
+.storybook-heart::before,
+.storybook-heart::after {
+  position: absolute;
+  border-radius: 999px;
+  content: "";
+}
+
+.storybook-heart::before {
+  height: 26px;
+  width: 26px;
+  transform: translateY(-13px);
+}
+
+.storybook-heart::after {
+  height: 26px;
+  width: 26px;
+  transform: translateX(13px);
+}
+
+.heart-red,
+.heart-red::before,
+.heart-red::after {
+  background: #f05c5c;
+}
+
+.heart-purple,
+.heart-purple::before,
+.heart-purple::after {
+  background: #7654ad;
+}
+
+.storybook-star {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 56%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 56%,
+    2% 35%,
+    39% 35%
+  );
+  height: 38px;
+  width: 38px;
+}
+
+.star-yellow {
+  background: #f5a623;
+}
+
+.star-green {
+  background: #61a947;
+}
+
+.star-purple {
+  background: #7654ad;
+}
+
+.storybook-bookmark {
+  height: 74px;
+  width: 148px;
+  border: 3px dashed #f5a623;
+  border-radius: 999px 999px 12px 12px;
+  opacity: 0.48;
+  rotate: -8deg;
+}
+
+.storybook-dash {
+  height: 8px;
+  width: 54px;
+  border-radius: 999px;
+}
+
+.dash-blue {
+  background: #17324d;
+}
+
+.dash-red {
+  background: #f05c5c;
+}
+
+.dash-purple {
+  background: #7654ad;
+}
+
+.dash-green {
+  background: #61a947;
+}
+
+.storybook-sunburst {
+  height: 84px;
+  width: 84px;
+  border: 4px dashed rgba(23, 50, 77, 0.22);
+  border-radius: 999px;
+}
+
+.storybook-pencil-line {
+  height: 12px;
+  width: 138px;
+  border-top: 4px dashed #f05c5c;
+  border-radius: 999px;
+  opacity: 0.42;
+}
+
+.hero-heart-one {
+  left: 8%;
+  top: 18%;
+  opacity: 0.2;
+}
+
+.hero-heart-two {
+  bottom: 18%;
+  left: 44%;
+  opacity: 0.18;
+}
+
+.hero-star-one {
+  right: 42%;
+  top: 16%;
+  opacity: 0.24;
+  rotate: 12deg;
+}
+
+.hero-star-two {
+  bottom: 17%;
+  right: 6%;
+  opacity: 0.22;
+  rotate: -16deg;
+}
+
+.hero-bookmark {
+  right: 12%;
+  top: 8%;
+}
+
+.hero-dash-one {
+  bottom: 10%;
+  left: 10%;
+  opacity: 0.16;
+  rotate: 18deg;
+}
+
+.hero-dash-two {
+  right: 32%;
+  top: 54%;
+  opacity: 0.18;
+  rotate: -28deg;
+}
+
+.purchase-burst-one {
+  left: 3%;
+  top: -22px;
+}
+
+.purchase-burst-two {
+  bottom: -28px;
+  right: 4%;
+}
+
+.purchase-heart {
+  bottom: 18px;
+  left: 35%;
+  opacity: 0.22;
+}
+
+.note-line-one {
+  right: 10%;
+  top: 18%;
+  rotate: -10deg;
+}
+
+.note-line-two {
+  bottom: 14%;
+  left: 8%;
+  rotate: 8deg;
+}
+
+.note-star {
+  bottom: 22%;
+  right: 13%;
+  opacity: 0.16;
+  rotate: 18deg;
+}
+
+.author-heart {
+  bottom: 14%;
+  left: 4%;
+  opacity: 0.16;
+}
+
+.author-star {
+  left: 52%;
+  top: 12%;
+  opacity: 0.18;
+  rotate: -12deg;
+}
+
+.author-dash-one {
+  right: 8%;
+  top: 18%;
+  opacity: 0.2;
+  rotate: 18deg;
+}
+
+.author-dash-two {
+  bottom: 12%;
+  right: 14%;
+  opacity: 0.22;
+  rotate: -12deg;
+}
+
+@media (max-width: 768px) {
+  .storybook-heart,
+  .storybook-star,
+  .storybook-bookmark,
+  .storybook-dash,
+  .storybook-sunburst,
+  .storybook-pencil-line {
+    opacity: 0.1;
+    transform: scale(0.78);
+  }
+
+  .hero-bookmark,
+  .hero-star-one,
+  .note-line-one,
+  .author-star {
+    display: none;
+  }
 }
