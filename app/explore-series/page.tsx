@@ -44,15 +44,15 @@ export default function ExploreSeriesPage() {
             {books.map((book) => (
               <article
                 key={book.slug}
-                className="grid overflow-hidden rounded-md bg-[#fff8ec] text-[#17324d] shadow-xl md:grid-cols-[260px_1fr] lg:grid-cols-[320px_1fr]"
+                className="grid overflow-hidden rounded-md bg-[#fff8ec] text-[#17324d] shadow-xl md:grid-cols-[420px_minmax(0,1fr)]"
               >
-                <div className="relative aspect-[1791/1925] bg-white md:h-full md:min-h-[360px]">
+                <div className="relative aspect-[3/2] w-full bg-white md:h-[280px] md:w-[420px] md:self-center">
                   <Image
-                    src={book.coverImage}
-                    alt={`${book.title}: ${book.subtitle} cover`}
+                    src={book.listingImage}
+                    alt={`${book.title}: ${book.subtitle} listing image`}
                     fill
-                    sizes="(min-width: 1024px) 320px, (min-width: 768px) 260px, 92vw"
-                    className="object-cover object-top"
+                    sizes="(min-width: 768px) 420px, 92vw"
+                    className="object-contain object-center"
                   />
                 </div>
                 <div className="flex flex-col justify-center p-6 sm:p-8">

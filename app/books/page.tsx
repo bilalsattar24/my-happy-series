@@ -27,13 +27,13 @@ export default function BooksPage() {
                 key={book.slug}
                 className="overflow-hidden rounded-md border border-[#eed8b8] bg-white shadow-sm"
               >
-                <div className="relative aspect-[1791/1925] overflow-hidden bg-[#fff8ec]">
+                <div className="relative aspect-[3/2] overflow-hidden bg-[#fff8ec]">
                   <Image
-                    src={book.coverImage}
-                    alt={`${book.title}: ${book.subtitle} cover`}
+                    src={book.listingImage}
+                    alt={`${book.title}: ${book.subtitle} listing image`}
                     fill
                     sizes="(min-width: 1024px) 30vw, 90vw"
-                    className="object-cover object-top"
+                    className="object-contain"
                   />
                 </div>
                 <div className="p-6">
