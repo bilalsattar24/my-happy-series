@@ -49,6 +49,8 @@ export default function BooksPage() {
                   </p>
                   <a
                     href={book.purchaseUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-6 inline-flex h-12 w-full items-center justify-center rounded-md bg-[#17324d] px-5 text-base font-black text-white transition hover:bg-[#0d2238]"
                   >
                     Buy Now

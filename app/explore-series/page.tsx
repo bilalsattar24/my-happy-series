@@ -9,24 +9,32 @@ export default function ExploreSeriesPage() {
     <main className="min-h-screen bg-[#fff8ec] text-[#17324d]">
       <SiteHeader />
 
-      <section className="happy-books-bg px-5 py-16 text-white sm:px-8 lg:px-10">
-        <div className="mx-auto max-w-7xl">
+      <section className="happy-explore-bg relative overflow-hidden px-5 py-16 text-[#17324d] sm:px-8 lg:px-10">
+        <div className="storybook-explore-graphics" aria-hidden="true">
+          <span className="storybook-bookmark explore-bookmark" />
+          <span className="storybook-star star-yellow explore-star-one" />
+          <span className="storybook-star star-green explore-star-two" />
+          <span className="storybook-heart heart-red explore-heart" />
+          <span className="storybook-dash dash-blue explore-dash-one" />
+          <span className="storybook-dash dash-purple explore-dash-two" />
+        </div>
+        <div className="relative mx-auto max-w-7xl">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
-              <p className="text-sm font-black uppercase text-[#ffd85c]">
+              <p className="text-sm font-black uppercase text-[#8f4f2e]">
                 Explore the series
               </p>
               <h1 className="mt-4 text-4xl font-black sm:text-5xl">
                 Start or grow your collection.
               </h1>
-              <p className="mt-5 max-w-3xl text-lg leading-8 text-white/82">
+              <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5a4b3d]">
                 Each book is made to support young hearts with faith,
                 confidence, prayer, and positive self-talk.
               </p>
             </div>
             <Link
               href="/books"
-              className="inline-flex h-12 items-center justify-center rounded-md bg-[#ffd85c] px-6 text-base font-black text-[#17324d] transition hover:bg-[#ffe98e]"
+              className="inline-flex h-12 items-center justify-center rounded-md bg-[#f05c5c] px-6 text-base font-black text-white shadow-[0_12px_24px_rgba(240,92,92,0.2)] transition hover:bg-[#d94848]"
             >
               Buy the Books
             </Link>

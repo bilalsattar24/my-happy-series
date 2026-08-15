@@ -91,6 +91,18 @@ a {
     linear-gradient(135deg, #17324d 0%, #4f3f88 52%, #0f75bc 100%);
 }
 
+.happy-explore-bg {
+  background-color: #fff8ec;
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255, 216, 92, 0.34) 0 88px, transparent 90px),
+    radial-gradient(circle at 88% 10%, rgba(240, 92, 92, 0.16) 0 94px, transparent 96px),
+    radial-gradient(circle at 82% 78%, rgba(15, 117, 188, 0.12) 0 118px, transparent 120px),
+    radial-gradient(circle at 18% 88%, rgba(97, 169, 71, 0.14) 0 108px, transparent 110px),
+    linear-gradient(90deg, rgba(23, 50, 77, 0.055) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(23, 50, 77, 0.045) 1px, transparent 1px);
+  background-size: auto, auto, auto, auto, 34px 34px, 34px 34px;
+}
+
 .happy-author-bg {
   background:
     radial-gradient(circle at 18% 22%, rgba(255, 216, 92, 0.22), transparent 24%),
@@ -102,7 +114,8 @@ a {
 .storybook-sprinkles,
 .storybook-purchase-pattern,
 .storybook-side-notes,
-.storybook-author-graphics {
+.storybook-author-graphics,
+.storybook-explore-graphics {
   pointer-events: none;
   position: absolute;
   inset: 0;
@@ -336,6 +349,47 @@ a {
   right: 14%;
   opacity: 0.22;
   rotate: -12deg;
+}
+
+.explore-bookmark {
+  right: 8%;
+  top: 76px;
+  opacity: 0.34;
+  rotate: 6deg;
+}
+
+.explore-star-one {
+  left: 6%;
+  top: 210px;
+  opacity: 0.22;
+  rotate: -18deg;
+}
+
+.explore-star-two {
+  bottom: 12%;
+  right: 10%;
+  opacity: 0.18;
+  rotate: 18deg;
+}
+
+.explore-heart {
+  bottom: 18%;
+  left: 9%;
+  opacity: 0.16;
+}
+
+.explore-dash-one {
+  right: 20%;
+  top: 270px;
+  opacity: 0.14;
+  rotate: -20deg;
+}
+
+.explore-dash-two {
+  bottom: 24%;
+  left: 22%;
+  opacity: 0.16;
+  rotate: 14deg;
 }
 
 @media (max-width: 768px) {

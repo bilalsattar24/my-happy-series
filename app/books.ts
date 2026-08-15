@@ -4,7 +4,7 @@ export const books = [
     title: "My Happy Salah Time",
     subtitle: "Aisha",
     theme: "Introduction to prayer and feeling close to Allah",
-    age: "Ages 2-10",
+    age: "Ages 2-6 years old",
     price: "$12.99",
     color: "from-rose-300 via-pink-200 to-amber-200",
     coverImage: "/books/my-happy-salah-time-aisha-front.png",
@@ -26,7 +26,7 @@ export const books = [
     title: "My Happy Salah Time",
     subtitle: "Ahmad",
     theme: "Introduction to prayer and feeling close to Allah",
-    age: "Ages 2-10",
+    age: "Ages 2-6 years old",
     price: "$12.99",
     color: "from-sky-300 via-teal-200 to-lime-200",
     coverImage: "/books/my-happy-salah-time-ahmad-front.png",
@@ -48,12 +48,13 @@ export const books = [
     title: "My Happy Self",
     subtitle: "Self love and positive affirmations",
     theme: "Positive affirmations and self-love",
-    age: "Ages 2-10",
+    age: "Ages 2-6 years old",
     price: "$12.99",
     color: "from-violet-300 via-fuchsia-200 to-yellow-200",
     coverImage: "/books/my-happy-self-front-cover.png",
     accent: "#6f49a8",
-    purchaseUrl: "#purchase",
+    purchaseUrl:
+      "https://www.amazon.com/My-Happy-Self-ourselves-affirmations/dp/B0H8TJV6VR/ref=sr_1_1?crid=2Z79OIHI217KA&dib=eyJ2IjoiMSJ9.phUMRTmgEoQVO588rDc7U580_3aJQUnlDnEuxgNPyqy89ZKV2Hv3f_DWYDmrKqWgMXb74X8nmUxdDevKy-QPAkm97C9RJB8LI8sx3b9IFTF2ljXbVJgldMCxcQ1U2gFsJ1qErLxwWkEFMt3DGIgrrSOIqXMgUJIaUbanUjHLJYRQvw0jdhOT0WCS3cohNsXnBDXellapPL4hgYTmQVCZcXhADmillh5gCiicJoR-U9c.-NdJi912FvrI2L-Ehir9lUK3LY0yCpaFa9cbA39Gz0M&dib_tag=se&keywords=my+happy+self+umaymah+muhammad&qid=1786771299&sprefix=my+happy+self+%2Caps%2C196&sr=8-1",
     description:
       "A cheerful book about the words children tell themselves, helping them build confidence and love who they are.",
     detailedDescription:

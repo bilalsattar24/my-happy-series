@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <div className="mt-9 max-w-xs text-center">
               <div className="rounded-md border border-[#eccf9f] bg-white/58 px-5 py-4 font-black text-[#17324d]">
-                Recommended ages 2-10
+                Recommended ages 2-6 years old
               </div>
             </div>
           </div>

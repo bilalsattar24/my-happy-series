@@ -1,5 +1,5 @@
 import { SiteFooter, SiteHeader } from "../site-chrome";
-import { authorParagraphs, futureBooksCopy } from "../site-content";
+import { authorParagraphs } from "../site-content";
 
 export default function AuthorPage() {
   return (
@@ -13,7 +13,7 @@ export default function AuthorPage() {
           <span className="storybook-dash dash-purple author-dash-one" />
           <span className="storybook-dash dash-green author-dash-two" />
         </div>
-        <div className="relative mx-auto grid max-w-7xl gap-6 lg:grid-cols-2 lg:items-start">
+        <div className="relative mx-auto max-w-4xl">
           <div className="rounded-md border border-[#eed8b8] bg-white/92 p-6 shadow-sm sm:p-8">
             <p className="text-sm font-black uppercase text-[#8f4f2e]">
               From the author
@@ -31,18 +31,6 @@ export default function AuthorPage() {
                 Umaymah Muhammad
               </p>
             </div>
-          </div>
-
-          <div className="rounded-md border border-[#edc582] bg-[#f6dcae] p-6 shadow-sm sm:p-8">
-            <p className="text-sm font-black uppercase text-[#8f4f2e]">
-              More books are coming soon
-            </p>
-            <h2 className="mt-4 text-4xl font-black text-[#17324d]">
-              A series built to keep growing with your child.
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-[#5a4b3d]">
-              {futureBooksCopy}
-            </p>
           </div>
         </div>
       </section>

@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "My Happy Series | Children's Books",
   description:
     "Islam-inspired children's books by Umaymah Muhammad about salah, self-love, confidence, and happy little hearts.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
