@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { benefits, books } from "./books";
+import { benefits, homeCoverBooks } from "./books";
 import { SiteFooter, SiteHeader } from "./site-chrome";
 
 export default function Home() {
@@ -54,7 +54,7 @@ export default function Home() {
 
           <div className="relative mx-auto flex w-full max-w-2xl items-center justify-center py-8">
             <div className="absolute inset-x-8 bottom-4 h-24 rounded-[50%] bg-[#d7a856]/25 blur-2xl" />
-            {books.map((book, index) => (
+            {homeCoverBooks.map((book, index) => (
               <div
                 key={book.slug}
                 className={`relative aspect-[1791/1925] w-[34%] min-w-24 overflow-hidden rounded-md bg-white shadow-2xl ring-4 ring-white ${

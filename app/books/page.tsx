@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BookImageSlider } from "../book-image-slider";
 import { books } from "../books";
 import { SiteFooter, SiteHeader } from "../site-chrome";
 
@@ -25,36 +25,41 @@ export default function BooksPage() {
             {books.map((book) => (
               <article
                 key={book.slug}
-                className="overflow-hidden rounded-md border border-[#eed8b8] bg-white shadow-sm"
+                className="flex h-full flex-col overflow-hidden rounded-md border border-[#eed8b8] bg-white shadow-sm"
               >
-                <div className="relative aspect-[3/2] overflow-hidden bg-[#fff8ec]">
-                  <Image
-                    src={book.listingImage}
-                    alt={`${book.title}: ${book.subtitle} listing image`}
-                    fill
-                    sizes="(min-width: 1024px) 30vw, 90vw"
-                    className="object-contain"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between gap-4">
+                <BookImageSlider
+                  className="bg-[#fff8ec]"
+                  sizes="(min-width: 1024px) 30vw, 90vw"
+                  slides={
+                    book.slideImages ?? [
+                      {
+                        src: book.listingImage,
+                        alt: `${book.title}: ${book.subtitle} listing image`,
+                      },
+                    ]
+                  }
+                />
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="flex flex-wrap items-start justify-between gap-3">
                     <p className="text-sm font-black uppercase" style={{ color: book.accent }}>
                       {book.age}
                     </p>
                     <p className="text-xl font-black">{book.price}</p>
                   </div>
                   <h3 className="mt-3 text-2xl font-black">{book.theme}</h3>
-                  <p className="mt-4 min-h-24 text-base leading-7 text-[#5a4b3d]">
+                  <p className="mt-4 text-base leading-7 text-[#5a4b3d]">
                     {book.description}
                   </p>
-                  <a
-                    href={book.purchaseUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-flex h-12 w-full items-center justify-center rounded-md bg-[#17324d] px-5 text-base font-black text-white transition hover:bg-[#0d2238]"
-                  >
-                    Buy Now
-                  </a>
+                  <div className="mt-auto pt-6">
+                    <a
+                      href={book.purchaseUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex h-12 w-full items-center justify-center rounded-md bg-[#17324d] px-5 text-base font-black text-white transition hover:bg-[#0d2238]"
+                    >
+                      Buy Now
+                    </a>
+                  </div>
                 </div>
               </article>
             ))}

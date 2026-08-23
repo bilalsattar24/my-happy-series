@@ -7,6 +7,7 @@ Website for My Happy Series, a children's book collection by Umaymah Muhammad.
 - Home
 - Books
 - Explore Series
+- Wholesale
 - Author
 
 ## Local Preview

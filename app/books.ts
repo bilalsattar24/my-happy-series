@@ -1,5 +1,43 @@
 export const books = [
   {
+    slug: "self",
+    title: "My Happy Self",
+    subtitle: "A positive self-talk and emotional wellness book for young children",
+    theme: "A positive self-talk and emotional wellness book for young children",
+    age: "Ages 2-6 · Preschool, T-K & Kindergarten",
+    price: "$12.99",
+    color: "from-violet-300 via-fuchsia-200 to-yellow-200",
+    coverImage: "/books/my-happy-self-front-cover.png",
+    listingImage: "/books/my-happy-self-listing-image.png",
+    slideImages: [
+      {
+        src: "/books/my-happy-self-listing-image.png",
+        alt: "My Happy Self listing image",
+      },
+      {
+        src: "/books/my-happy-self-page-3.jpg",
+        alt: "A page from My Happy Self that reads I am loved just the way I am",
+      },
+    ],
+    accent: "#6f49a8",
+    purchaseUrl:
+      "https://www.amazon.com/My-Happy-Self-ourselves-affirmations/dp/B0H8TJV6VR/ref=sr_1_1?crid=2Z79OIHI217KA&dib=eyJ2IjoiMSJ9.phUMRTmgEoQVO588rDc7U580_3aJQUnlDnEuxgNPyqy89ZKV2Hv3f_DWYDmrKqWgMXb74X8nmUxdDevKy-QPAkm97C9RJB8LI8sx3b9IFTF2ljXbVJgldMCxcQ1U2gFsJ1qErLxwWkEFMt3DGIgrrSOIqXMgUJIaUbanUjHLJYRQvw0jdhOT0WCS3cohNsXnBDXellapPL4hgYTmQVCZcXhADmillh5gCiicJoR-U9c.-NdJi912FvrI2L-Ehir9lUK3LY0yCpaFa9cbA39Gz0M&dib_tag=se&keywords=my+happy+self+umaymah+muhammad&qid=1786771299&sprefix=my+happy+self+%2Caps%2C196&sr=8-1",
+    description:
+      "A book that nurtures self-confidence, positive self-talk, emotional resilience, kindness, self-worth, trying again, recognizing their voice, and feeling capable, with inclusive illustrations children can see themselves in.",
+    detailedDescription:
+      "A book that nurtures self-confidence, positive self-talk, emotional resilience, kindness, self-worth, trying again, recognizing their voice, and feeling capable, with inclusive illustrations children can see themselves in.",
+    highlights: [
+      "Self-confidence",
+      "Positive self-talk",
+      "Emotional resilience",
+      "Kindness",
+      "Self-worth",
+      "Trying again",
+      "Recognizing their voice",
+      "Feeling capable",
+    ],
+  },
+  {
     slug: "aisha",
     title: "My Happy Salah Time",
     subtitle: "Aisha",
@@ -9,13 +47,23 @@ export const books = [
     color: "from-rose-300 via-pink-200 to-amber-200",
     coverImage: "/books/my-happy-salah-time-aisha-front.png",
     listingImage: "/books/aisha-listing-image.jpeg",
+    slideImages: [
+      {
+        src: "/books/aisha-listing-image.jpeg",
+        alt: "My Happy Salah Time: Aisha listing image",
+      },
+      {
+        src: "/books/my-happy-salah-time-aisha-page-6.jpg",
+        alt: "A page from My Happy Salah Time: Aisha where Aisha asks Mama what a prayer is",
+      },
+    ],
     accent: "#ec6f98",
     purchaseUrl:
       "https://www.amazon.com/My-Happy-Salah-Time-learns/dp/B0H4G2DJ4T/",
     description:
-      "Aisha learns to pray and feel close to Allah through warm, age-friendly moments little readers can recognize.",
+      "Aisha learns to pray and feel close to Allah through warm, age-friendly moments and bright, engaging illustrations little readers can recognize.",
     detailedDescription:
-      "Join 5-year-old Aisha on a joyful journey as she discovers the beauty, peace, and excitement of daily Salah. Written in a delightful, comforting rhyme that is perfect for bedtime reading or classroom storytime, My Happy Salah Time transforms a child's daily prayer routine into a beautiful moment of connection with Allah. Through vibrant, Pixar-style illustrations, young readers will watch Aisha prepare with enthusiasm, follow the steps of prayer with love, and feel the warm comfort of making a heartfelt dua.",
+      "Join 5-year-old Aisha on a joyful journey as she discovers the beauty, peace, and excitement of daily Salah. Written in a delightful, comforting rhyme that is perfect for bedtime reading or classroom storytime, My Happy Salah Time transforms a child's daily prayer routine into a beautiful moment of connection with Allah. Through bright, engaging illustrations, young readers will watch Aisha prepare with enthusiasm, follow the steps of prayer with love, and feel the warm comfort of making a heartfelt dua.",
     highlights: [
       "Introduction to prayer",
       "Build connection with Allah",
@@ -32,6 +80,16 @@ export const books = [
     color: "from-sky-300 via-teal-200 to-lime-200",
     coverImage: "/books/my-happy-salah-time-ahmad-front.png",
     listingImage: "/books/ahmad-listing-image.png",
+    slideImages: [
+      {
+        src: "/books/ahmad-listing-image.png",
+        alt: "My Happy Salah Time: Ahmad listing image",
+      },
+      {
+        src: "/books/my-happy-salah-time-ahmad-page-2.jpg",
+        alt: "A page from My Happy Salah Time: Ahmad that reads May your heart always find peace in prayer",
+      },
+    ],
     accent: "#0f75bc",
     purchaseUrl:
       "https://www.amazon.com/My-Happy-Salah-Time-learns/dp/B0H6JQ7DR4/",
@@ -45,26 +103,28 @@ export const books = [
       "Find joy in prayer",
     ],
   },
+];
+
+export const wholesaleBook = books.find((book) => book.slug === "self")!;
+
+export const wholesaleSlides = [
+  ...(wholesaleBook.slideImages ?? [
+    {
+      src: wholesaleBook.listingImage,
+      alt: `${wholesaleBook.title}: ${wholesaleBook.subtitle} listing image`,
+    },
+  ]),
   {
-    slug: "self",
-    title: "My Happy Self",
-    subtitle: "Self love and positive affirmations",
-    theme: "Positive affirmations and self-love",
-    age: "Ages 2-6 years old",
-    price: "$12.99",
-    color: "from-violet-300 via-fuchsia-200 to-yellow-200",
-    coverImage: "/books/my-happy-self-front-cover.png",
-    listingImage: "/books/my-happy-self-listing-image.png",
-    accent: "#6f49a8",
-    purchaseUrl:
-      "https://www.amazon.com/My-Happy-Self-ourselves-affirmations/dp/B0H8TJV6VR/ref=sr_1_1?crid=2Z79OIHI217KA&dib=eyJ2IjoiMSJ9.phUMRTmgEoQVO588rDc7U580_3aJQUnlDnEuxgNPyqy89ZKV2Hv3f_DWYDmrKqWgMXb74X8nmUxdDevKy-QPAkm97C9RJB8LI8sx3b9IFTF2ljXbVJgldMCxcQ1U2gFsJ1qErLxwWkEFMt3DGIgrrSOIqXMgUJIaUbanUjHLJYRQvw0jdhOT0WCS3cohNsXnBDXellapPL4hgYTmQVCZcXhADmillh5gCiicJoR-U9c.-NdJi912FvrI2L-Ehir9lUK3LY0yCpaFa9cbA39Gz0M&dib_tag=se&keywords=my+happy+self+umaymah+muhammad&qid=1786771299&sprefix=my+happy+self+%2Caps%2C196&sr=8-1",
-    description:
-      "A cheerful book about the words children tell themselves, helping them build confidence and love who they are.",
-    detailedDescription:
-      "A cheerful book about the words children tell themselves, helping them build confidence and love who they are.",
-    highlights: ["Positive self-talk", "Confidence building", "Also available as ebook"],
+    src: "/books/my-happy-self-cover-spread.jpg",
+    alt: "My Happy Self front and back cover spread",
   },
 ];
+
+const homeCoverSlugs = ["aisha", "self", "ahmad"] as const;
+
+export const homeCoverBooks = homeCoverSlugs.map(
+  (slug) => books.find((book) => book.slug === slug)!,
+);
 
 export const benefits = [
   "Faith-centered stories make salah, confidence, and kindness feel warm and approachable.",

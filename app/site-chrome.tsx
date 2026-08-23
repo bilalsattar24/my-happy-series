@@ -11,9 +11,10 @@ export function SiteHeader() {
           <span className="brand-smiley" aria-hidden="true" />
           <span>My Happy Series</span>
         </Link>
-        <div className="hidden items-center gap-6 text-sm font-bold text-[#5a4b3d] sm:flex">
+        <div className="hidden items-center gap-5 text-sm font-bold text-[#5a4b3d] sm:flex">
           <Link href="/books">Books</Link>
           <Link href="/explore-series">Explore Series</Link>
+          <Link href="/wholesale">Wholesale</Link>
           <Link href="/author">Author</Link>
         </div>
         <Link
@@ -32,9 +33,17 @@ export function SiteFooter() {
     <footer className="bg-[#17324d] px-5 py-10 text-white sm:px-8 lg:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="whitespace-nowrap text-xl font-black">My Happy Series</p>
-        <p className="text-sm text-white/72">
-          Children&apos;s books for faith, confidence, and happy little hearts.
-        </p>
+        <div className="flex flex-col gap-3 sm:items-end">
+          <div className="flex flex-wrap gap-5 text-sm font-bold text-white/80">
+            <Link href="/books">Books</Link>
+            <Link href="/explore-series">Explore Series</Link>
+            <Link href="/wholesale">Wholesale</Link>
+            <Link href="/author">Author</Link>
+          </div>
+          <p className="text-sm text-white/72">
+            Children&apos;s books for faith, confidence, and happy little hearts.
+          </p>
+        </div>
       </div>
     </footer>
   );

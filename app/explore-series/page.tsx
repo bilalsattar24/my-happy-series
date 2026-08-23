@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { BookImageSlider } from "../book-image-slider";
 import { books } from "../books";
 import { SiteFooter, SiteHeader } from "../site-chrome";
 import { futureBooksCopy } from "../site-content";
@@ -46,15 +46,16 @@ export default function ExploreSeriesPage() {
                 key={book.slug}
                 className="grid overflow-hidden rounded-md bg-[#fff8ec] text-[#17324d] shadow-xl md:grid-cols-[420px_minmax(0,1fr)]"
               >
-                <div className="relative aspect-[3/2] w-full bg-white md:h-[280px] md:w-[420px] md:self-center">
-                  <Image
-                    src={book.listingImage}
-                    alt={`${book.title}: ${book.subtitle} listing image`}
-                    fill
-                    sizes="(min-width: 768px) 420px, 92vw"
-                    className="object-contain object-center"
-                  />
-                </div>
+                <BookImageSlider
+                  slides={
+                    book.slideImages ?? [
+                      {
+                        src: book.listingImage,
+                        alt: `${book.title}: ${book.subtitle} listing image`,
+                      },
+                    ]
+                  }
+                />
                 <div className="flex flex-col justify-center p-6 sm:p-8">
                   <p className="text-sm font-black uppercase" style={{ color: book.accent }}>
                     {book.age}

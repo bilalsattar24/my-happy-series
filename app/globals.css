@@ -111,11 +111,20 @@ a {
     linear-gradient(135deg, #fff8ec 0%, #ffe9d0 50%, #eaf6df 100%);
 }
 
+.happy-wholesale-bg {
+  background:
+    radial-gradient(circle at 14% 20%, rgba(117, 84, 173, 0.16), transparent 24%),
+    radial-gradient(circle at 86% 18%, rgba(255, 216, 92, 0.22), transparent 24%),
+    radial-gradient(circle at 78% 84%, rgba(15, 117, 188, 0.14), transparent 26%),
+    linear-gradient(135deg, #fff8ec 0%, #f3e7ff 48%, #e8f7ff 100%);
+}
+
 .storybook-sprinkles,
 .storybook-purchase-pattern,
 .storybook-side-notes,
 .storybook-author-graphics,
-.storybook-explore-graphics {
+.storybook-explore-graphics,
+.storybook-wholesale-graphics {
   pointer-events: none;
   position: absolute;
   inset: 0;
@@ -390,6 +399,40 @@ a {
   left: 22%;
   opacity: 0.16;
   rotate: 14deg;
+}
+
+.wholesale-star-one {
+  right: 10%;
+  top: 28px;
+  opacity: 0.22;
+  rotate: 14deg;
+}
+
+.wholesale-star-two {
+  left: 8%;
+  bottom: 18%;
+  opacity: 0.18;
+  rotate: -16deg;
+}
+
+.wholesale-heart {
+  right: 22%;
+  bottom: 16%;
+  opacity: 0.16;
+}
+
+.wholesale-dash-one {
+  left: 18%;
+  top: 36%;
+  opacity: 0.16;
+  rotate: 18deg;
+}
+
+.wholesale-dash-two {
+  right: 16%;
+  top: 58%;
+  opacity: 0.16;
+  rotate: -22deg;
 }
 
 @media (max-width: 768px) {
