@@ -127,8 +127,8 @@ export const homeCoverBooks = homeCoverSlugs.map(
 );
 
 export const benefits = [
-  "Faith-centered stories make salah, confidence, and kindness feel warm and approachable.",
-  "Playful illustrations help children see themselves in the pages.",
   "Simple language supports bedtime reading, classroom circles, and family discussion.",
+  "Playful illustrations help children see themselves in the pages.",
+  "Faith-centered stories make salah feel comfortable and approachable.",
   "A growing collection gives families more meaningful books to look forward to.",
 ];

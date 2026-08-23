@@ -21,15 +21,16 @@ export default function Home() {
         <div className="relative mx-auto grid min-h-[calc(100vh-73px)] max-w-7xl items-center gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:px-10">
           <div className="max-w-2xl">
             <p className="text-sm font-black uppercase text-[#8f4f2e]">
-              Faith, confidence, and joy for little hearts
+              Books that feel playful but purposeful.
             </p>
             <h1 className="mt-4 whitespace-nowrap text-5xl font-black leading-[1.02] text-[#17324d] sm:text-6xl lg:text-7xl">
               My Happy Series
             </h1>
             <p className="mt-6 max-w-xl text-xl leading-8 text-[#5a4b3d]">
               A growing children&apos;s book collection by Umaymah Muhammad,
-              created to help Muslim families nurture salah, self-love, and
-              positive daily habits through joyful stories.
+              created to help families nurture self-love, Salah, and
+              positive daily habits through joyful stories and relatable
+              illustrations.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
