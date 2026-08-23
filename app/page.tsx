@@ -21,7 +21,7 @@ export default function Home() {
         <div className="relative mx-auto grid min-h-[calc(100vh-73px)] max-w-7xl items-center gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:px-10">
           <div className="max-w-2xl">
             <p className="text-sm font-black uppercase text-[#8f4f2e]">
-              Books that feel playful but purposeful.
+              Books that feel playful and purposeful.
             </p>
             <h1 className="mt-4 whitespace-nowrap text-5xl font-black leading-[1.02] text-[#17324d] sm:text-6xl lg:text-7xl">
               My Happy Series
