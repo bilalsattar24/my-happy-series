@@ -99,10 +99,13 @@ export default function WholesalePage() {
             Available for wholesale
           </p>
           <h2 className="mt-4 text-4xl font-black">
-            Wholesale is for My Happy Self.
+            Wholesale available for My Happy Self.
           </h2>
-          <article className="mt-10 grid overflow-hidden rounded-md border border-[#eed8b8] bg-white shadow-sm md:grid-cols-[420px_minmax(0,1fr)]">
-            <BookImageSlider slides={wholesaleSlides} />
+          <article className="mt-10 grid items-center overflow-hidden rounded-md border border-[#eed8b8] bg-white shadow-sm md:grid-cols-[420px_minmax(0,1fr)]">
+            <BookImageSlider
+              className="self-center bg-white"
+              slides={wholesaleSlides}
+            />
             <div className="flex min-w-0 flex-col justify-center p-6 sm:p-8">
               <p
                 className="text-sm font-black uppercase"
