@@ -61,7 +61,7 @@ export const books = [
     purchaseUrl:
       "https://www.amazon.com/My-Happy-Salah-Time-learns/dp/B0H4G2DJ4T/",
     description:
-      "Aisha learns to pray and feel close to Allah through warm, age-friendly moments and bright, engaging illustrations little readers can recognize.",
+      "Aisha learns to pray and feel close to Allah through warm, age-friendly moments. Bright and engaging illustrations help little ones feel seen and relate so they can implement Salah in their daily lives in a beautiful and heartwarming way.",
     detailedDescription:
       "Join 5-year-old Aisha on a joyful journey as she discovers the beauty, peace, and excitement of daily Salah. Written in a delightful, comforting rhyme that is perfect for bedtime reading or classroom storytime, My Happy Salah Time transforms a child's daily prayer routine into a beautiful moment of connection with Allah. Through bright, engaging illustrations, young readers will watch Aisha prepare with enthusiasm, follow the steps of prayer with love, and feel the warm comfort of making a heartfelt dua.",
     highlights: [
@@ -94,7 +94,7 @@ export const books = [
     purchaseUrl:
       "https://www.amazon.com/My-Happy-Salah-Time-learns/dp/B0H6JQ7DR4/",
     description:
-      "Ahmad discovers the comfort and joy of salah with a story that makes prayer feel inviting, familiar, and loved.",
+      "Ahmad discovers the comfort and joy of salah with a story that makes prayer feel inviting, familiar, and loved. Through warm and recognizable illustrations, little ones can feel safe and comfortable learning about salah and connection with Allah.",
     detailedDescription:
       "Help your little boy build a beautiful, lifelong bond with his daily prayers with this uplifting Islamic children's book! Follow along with 5-year-old Ahmad on an exciting journey as he discovers the peace, joy, and wonder of daily Salah. Written in a gentle, comforting rhyme that is ideal for bedtime reading or classroom storytime, Ahmad's Happy Salah Time turns the daily prayer routine into a special moment of connection with Allah. Through animated-style illustrations, young boys will see Ahmad jump into action with enthusiasm, follow the steps of prayer with love, and feel the cozy comfort of making his own heartfelt dua.",
     highlights: [
